@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #111827;
+  --color-secondary: #ffedd5;
+  --color-tertiary: #e0e7ff;
+  --color-neutral: #ffffff;
+  --color-background: #ffffff;
+  --color-surface: #e5e7eb;
+  --color-text-primary: #6b7280;
+  --color-text-secondary: #111827;
+  --color-border: #ffffff;
+  --color-accent: #111827;
+
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --radius-md: 0px;
+  --radius-lg: 16px;
+  --radius-xl: 28px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  --spacing-base: 4px;
+  --spacing-sm: 2.4px;
+  --spacing-md: 4px;
+  --spacing-lg: 6px;
+  --spacing-xl: 8px;
+  --spacing-2xl: 12px;
+  --spacing-3xl: 16px;
+  --spacing-4xl: 24px;
+  --spacing-5xl: 64px;
+
+  --shadow-card: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.06) 0px 1px 1px -0.5px,
+    rgba(0, 0, 0, 0.06) 0px 3px 3px -1.5px,
+    rgba(0, 0, 0, 0.06) 0px 6px 6px -3px,
+    rgba(0, 0, 0, 0.06) 0px 12px 12px -6px,
+    rgba(0, 0, 0, 0.06) 0px 24px 24px -12px;
+
+  --shadow-glass: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.04) 0px 8px 30px 0px;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22.75px;
+  color: var(--color-text-secondary);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}

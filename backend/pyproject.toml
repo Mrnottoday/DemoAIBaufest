@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "backend"
+description = "FastAPI JWT Authentication API"
+version = "0.1.0"
+authors = ["Dev"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = { version = "^0.32.0", extras = ["standard"] }
+python-jose = { version = "^3.3.0", extras = ["cryptography"] }
+passlib = { version = "^1.7.4", extras = ["bcrypt"] }
+bcrypt = ">=3.2,<4.0"
+pydantic = "^2.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
